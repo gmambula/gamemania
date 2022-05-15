@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +21,33 @@
                <a href="produtos.html">produtos</a>
                <a href="equipe.html">equipe</a>
                <a href="contatos.html">contatos</a>
-               <a style="font-size: 21px;" href="login.html">login</a>
+               <a id="login" style="font-size: 21px;" href="login.html">login</a>
             </nav>          
         </div>
     </header>
-    <div class="bannervendas">
+    <section class="bannervendas">
         <div class="conteinergrid produtos">
-            <img src="IMG/banner notebook.jpg" alt="imagem de notebook aberto">
-            <img src="IMG/banner ps5.jpg" alt="imagem ps5">
-            <img src="IMG/banner pc gamer.jpg" alt="imagem de pc gamer aberto"> 
+            <div class="boxhover">
+                <img  src="IMG/banner notebook.jpg" alt="imagem de notebook aberto">                    
+                <div class="boxhover">
+                <button type="button" class="btn btn-outline-dark"><h2>acesse os produtos</h2></button>
+                </div>
+            </div>
+            <div class="boxhover">
+                <img  src="IMG/banner ps5.jpg" alt="imagem ps5">                       
+                <div class="boxhover">
+                <a href="#"><h2>acesse os produtos</h2></a>
+                </div>
+            </div> 
+            <div class="boxhover">
+                <img  src="IMG/banner pc gamer.jpg" alt="imagem de pc gamer aberto">                    
+                <div class="boxhover">
+                <a href="#"><h2>acesse os produtos</h2></a>
+                </div>
+            </div>          
         </div>
-    </div>
-    <div class="fundobannercomunica" >
+    </section>
+    <section class="fundobannercomunica" >
         <div class="conteinergrid bannercomunica">
             <div class="conteinerjogo">
                 <img src="IMG/logo minercraft.svg" alt="logo jogo minercraft">
@@ -41,7 +58,7 @@
                 <p>Uma das melhores dicas que podemos dar é aprimorar as habilidades defensivas. Isso porque o FIFA 21 é um jogo muito movimentado, que aumentou as possibilidades de dribles e a velocidade em relação aos anteriores. Eliminar os espaços mantendo os defensores em posição e cobrindo erros é uma ótima forma de evitar tomar aqueles gols em que fica só seu goleiro para defender.</p>
             </div>
         </div>
-    </div>
+    </section>
     <footer>
         <div class="conteinergrid rodape">
             <div class="endereco">
@@ -52,19 +69,19 @@
             <div>
                 <img src="IMG/Logo GMania.svg" alt="logo game mania">
             </div>
-            <div class="contato">
-                <div class="telefone">
-                    <p>contato</p>
-                    <p>telefone: (00) 1234-1234</p>
-                    <p>contato@gamemania.com.br</p>
-                </div>
+            <div class="contato">                
+                <p>contato</p>
+                <p>telefone: (00) 1234-1234</p>
+                <p>contato@gamemania.com.br</p>
                 <div class="redesocial">
-                   <img src="IMG/logo telegran.svg" alt="logo telegrans">
-                   <img src="IMG/logo watsapp.svg" alt="logo watsapp">
-                   <img src="IMG/logo instagran.svg" alt="logo instagran">
+                    <img src="IMG/logo telegran.svg" alt="logo telegrans">
+                    <img src="IMG/logo watsapp.svg" alt="logo watsapp">
+                    <img src="IMG/logo instagran.svg" alt="logo instagran">            
                 </div>
             </div>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html> 
