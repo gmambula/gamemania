@@ -18,7 +18,7 @@
             <a href="index.html">
                 <img src="IMG/Logo GMania.svg" alt="logo game mania">
             </a>
-            <nav class="menu">
+            <nav id="menu" class="menu">
                <a href="história.html">história</a>                
                 <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">produtos</a>
                  <dl class="dropdown-menu">
@@ -29,7 +29,8 @@
                <a href="equipe.html">equipe</a>
                <a href="contatos.html">contatos</a>
                <a id="login" style="font-size: 21px;" href="login.html">login</a>
-            </nav>          
+            </nav>             
+               <a onclick="mostrarMenu()" href="#"><img class="barras" src="IMG/menu-hamburguer.svg" alt="menu barras"></a>                   
         </div>
     </header>
     <section class="conteinergrid bannervendas">
@@ -54,8 +55,8 @@
             </div>          
         </div>
     </section>
-    <section class="conteinergrid fundobannercomunica" >
-        <div class="conteinergrid bannercomunica">
+    <section class="bannercomunica"> 
+        <div class="conteudocomunica conteinergrid">
             <div class="conteinerjogo d-grid">
                 <img src="IMG/logo minercraft.svg" alt="logo jogo minercraft">
                 <p>Explore seus arredores e colete materiais para criar armas, armaduras, comida, ferramentas e materiais de construção. Certas regiões (como o subsolo) possuem materiais mais raros, como obsidiana e redstone, mas é preciso ter os equipamentos certos e, claro, é aconselhável ter um nível alto e bons equipamentos para sobreviver.</p>
@@ -66,7 +67,7 @@
                 <p>Uma das melhores dicas que podemos dar é aprimorar as habilidades defensivas. Isso porque o FIFA 21 é um jogo muito movimentado, que aumentou as possibilidades de dribles e a velocidade em relação aos anteriores. Eliminar os espaços mantendo os defensores em posição e cobrindo erros é uma ótima forma de evitar tomar aqueles gols em que fica só seu goleiro para defender.</p>
                 <button type="button" class="btn btn-block">acesse o blog</button>
             </div>
-        </div>
+        </div>       
     </section>
     <footer>
         <div class="conteinergrid rodape">
@@ -96,5 +97,6 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="JS/script.js"></script>
 </body>
 </html> 

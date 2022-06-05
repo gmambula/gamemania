@@ -17,6 +17,13 @@ header{
     align-items: center;
     height: 100%;
 }
+.barras{
+    height: 50px;
+    width: 50px;
+}
+.barras{
+    display: none;
+}
 .menu{
     width: 1000px;
     display: flex;
@@ -75,17 +82,16 @@ header{
     background-color: #131f31;
     opacity: 0.7;
 }
-.fundobannercomunica{
-    width: 100%;
-    background-image: url(IMG/fundo\ banner\ comunidade.svg);
+.bannercomunica{ 
+    background-image: url(IMG/fundo\ banner\ comunidade.svg);      
 }
-.bannercomunica{       
+.conteudocomunica{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 100%;
+    align-items: center;  
+    
 }
-.bannercomunica p {
+.conteudocomunica p{
     font-size: 16px;
     font-family: koHo, sans-serif;
     margin: 10px;
@@ -111,8 +117,7 @@ footer{
     background-color: #042E54;
     width: 100%;  
     display: flex;
-    justify-content: space-between;
-    height: 150px;  
+    justify-content: space-between;    
 }
 footer p{
     font-size: 16px;
@@ -142,7 +147,15 @@ footer p{
 @media screen and (max-width: 1150px) {
     .conteinergrid {
         width: 100%;
-
+    }
+    .cabeçalho{
+        width: 90vw;
+    }
+    .produtos img{
+        padding: 6px;
+    }
+    .rodape{
+        justify-content: space-around;
     }
 }
 @media screen and (max-width: 900px) {
@@ -150,10 +163,38 @@ footer p{
         flex-wrap: wrap;
         height: 100%;
     }
-    .conteinerjogo{
-        width: 90px;
-        height: 90px;
+    .bannercomunica p{
+        display: none;
     }
-    
-    
-}
+    .conteinerjogo{
+        height: 215px;
+        width: 250px;
+    }
+    .conteinerjogo button{
+        font-size: 21px;
+    }
+    @media screen and (max-width: 660px) {
+       .rodape{
+           flex-direction: column-reverse;
+           height: 450px;
+       } 
+       .barras{
+           display: inline-block; 
+           color: #ffff;          
+       }
+       .cabeçalho{
+           position: relative;
+       }
+       .menu{
+           display: none;
+           position: absolute;
+           top: 125px;
+           z-index: 2;
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: center;
+           background-color: #0C64E9;
+           height: 230px;
+           width: 130px;
+       }
+    }
