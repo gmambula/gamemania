@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+header{
+    height: 125px;
+    background-color: #0C64E9;
+}
+.conteinergrid{
+   width: 1200px;
+   margin: 0 auto;
+}
+.cabeçalho{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: #042E54;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;    
+}
+footer p{
+    font-size: 16px;
+    font-family: KoHo;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;    
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.contato{
+    margin-top: 3px;
+    justify-content: space-between;
+}
+.redesocial{
+    display: flex;
+    justify-content: space-between; 
+}
+.contato img{
+    height: 30px;
+    width: 30px;
+     
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+    background-color: #1c7fdb;
+}
+.acessar{
+    width: 250px;
+    height: 200px;
+    background-color: #042E54;
+    border: solid 3px;
+    border-color: black;
+    padding: 6px;
+}
+.conteudoacesso{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.acessar label{
+    font-family:KoHo;
+    font-size: 24px;
+    color: #ffff;
+    text-transform: uppercase;
+}
+.acessar button{
+    font-family:KoHo;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .conteinergrid {
+        width: 100%;
+    }
+    .cabeçalho{
+        width: 90vw;
+    }
+    .rodape{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 900px) {
+    .conteinergrid {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    
+    
+}    
+@media screen and (max-width: 660px) {
+       .rodape{
+           flex-direction: column-reverse;
+           height: 450px;
+       } 
+       
+}
