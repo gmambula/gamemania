@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Game Mania</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="loginstyle.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@700&display=swap" rel="stylesheet">
-    <script src="JS/jquery-3.6.0.js" defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@700&display=swap" rel="stylesheet">
+<title>Login - Game Mania</title>
 </head>
 <body>
     <header>
@@ -18,17 +17,19 @@
             <a href="index.html">
                 <img src="IMG/Logo GMania.svg" alt="logo game mania">
             </a>
-    </header>
+        </header>
     <section class="conteinergrid login">
-        <div class="acessar">
-            <form class="conteudoacesso" action="#">
-                <label for="user">usuario:</label>
-                <input type="email" name="email" id="user">
-                <label for="password">senha:</label>
-                <input type="password" name="senha" id="password">
-                <button onclick="acessar" type="submit">acessar</button>
-            </form>
-        </div>
+        <form class="acessar">
+            <div class="conteudoacesso">               
+                    <label for="user">usuario:</label>
+                    <input type="email" name="email" id="user" placeholder="Email" required>               
+                
+                    <label for="password">senha:</label>
+                    <input type="password" name="senha" id="password" required>
+                
+                <button id="enviar" type="submit">acessar</button>
+            </div>
+        </form>
     </section>
     <footer>
         <div class="conteinergrid rodape">
@@ -57,7 +58,8 @@
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="loginstyle.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="JS/loginscript.js"></script>
 </body>
 </html>
